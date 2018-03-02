@@ -244,7 +244,7 @@ if [[ $IS_PRERELEASE -eq 0 ]]; then
     exit 1
 fi
 
-DISTRO=$(lsb_release -c -s)
+DISTRO="jessie"
 
 check_alt() {
     if [ "X${DISTRO}" == "X${2}" ]; then
